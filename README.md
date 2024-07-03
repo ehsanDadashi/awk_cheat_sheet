@@ -3,7 +3,13 @@
 it is a awk cheat sheet for me
 
 # awk command structure
-awk 'your command you want to do' file_addr
+awk 'BEGIN {..befor script..} /pattern/ {...action...} END {..after script..}' input file address
+
+BEGIN {....} -----> it uses for define variables and initial 
+
+/pattern/ {...action} -----> its the main of awk command 
+
+END {.....} ----> it use for last result operation 
 
 # print list of pid 
 ![image](https://github.com/ehsanDadashi/awk_cheat_sheet/assets/29996315/bc738888-54db-401a-afa9-9a814c56fad3)
