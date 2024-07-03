@@ -18,7 +18,9 @@ consider this example
 we have csv file like this 
 
 name,email,age
+
 john,john@example.com,28
+
 doe,doe@example.com,31
 
 we want to replace example.com with sample.com
@@ -28,7 +30,9 @@ awk -F, '{gsub(/example.com/,"sample.com",$2); print}' OFS=, email.txt >> sample
 now the sample.txt file is like
 
 name,email,age
+
 john,john@sample.com,28
+
 doe,doe@sample.com,31
 
 # Analyze command awk in search and replace 
