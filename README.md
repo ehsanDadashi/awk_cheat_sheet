@@ -17,11 +17,7 @@ consider this example
 
 we have csv file like this 
 
-name,email,age
-
-john,john@example.com,28
-
-doe,doe@example.com,31
+![image](https://github.com/ehsanDadashi/awk_cheat_sheet/assets/29996315/f5f0ad40-0cb9-401d-9f7c-1295f6157bc6)
 
 we want to replace example.com with sample.com
 
@@ -29,11 +25,7 @@ awk -F, '{gsub(/example.com/,"sample.com",$2); print}' OFS=, email.txt >> sample
 
 now the sample.txt file is like
 
-name,email,age
-
-john,john@sample.com,28
-
-doe,doe@sample.com,31
+![image](https://github.com/ehsanDadashi/awk_cheat_sheet/assets/29996315/667ca8f0-7e68-46da-86fd-d09a832e31fe)
 
 # Analyze command awk in search and replace 
 # awk -F, '{gsub(/example.com/,"sample.com",$2); print}' OFS=, email.txt >> sample.txt
